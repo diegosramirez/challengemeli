@@ -25,6 +25,8 @@ namespace Program
 
         private void QueueAnomalies()
         {
+            // Save Report to database
+            // Queue anomalies to Pub/Sub service
         }
     }
 }

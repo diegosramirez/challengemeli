@@ -8,6 +8,7 @@ namespace Program
     {
         public IEnumerable<Input> LoadData()
         {
+            // This should call Data Dog API to retrieve the data to be analized
             return new List<Input>
             {
                 new Input
@@ -38,7 +39,7 @@ namespace Program
                 new Input
                 {
                     Date = DateTime.Now.AddMinutes(6),
-                    Value = 1641
+                    Value = 1641 // --> Spike
                 },
                 new Input
                 {

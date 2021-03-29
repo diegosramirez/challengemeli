@@ -8,6 +8,7 @@ namespace Program.Tests
     {
         public IEnumerable<Input> LoadData()
         {
+            // No spikes
             return new List<Input>
             {
                 new Input

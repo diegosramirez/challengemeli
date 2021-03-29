@@ -4,12 +4,8 @@ using System.Collections.Generic;
 
 namespace Program.Tests
 {
-    internal class MockDataLoaderWithAnomalies : IDataLoader
+    public class MockDataLoaderWithAnomalies : IDataLoader
     {
-        public MockDataLoaderWithAnomalies()
-        {
-        }
-
         public IEnumerable<Input> LoadData()
         {
             return new List<Input>
@@ -17,7 +13,7 @@ namespace Program.Tests
                 new Input
                 {
                     Date = DateTime.Now.AddMinutes(1),
-                    Value = 1500
+                    Value = 1500 // --> Spike
                 },
                 new Input
                 {
